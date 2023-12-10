@@ -3,14 +3,14 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import GatewayList from './components/GatewayList';
 import GatewayDetails from './components/GatewayDetails';
 import AddGatewayForm from './pages/AddGatewayForm';
-import '../src/css/app.css'; // Import the CSS file
+import '../src/css/app.css';
 
 function App() {
   const [gateways, setGateways] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:8080/api/gateway/all')
+    fetch('https://gateway-management.onrender.com/api/gateway/all')
       .then(res => res.json())
       .then(data => {
         setGateways(data);
