@@ -17,7 +17,7 @@ const AddDeviceForm = ({ serialNumber, onDeviceAdded }) => {
       vendor,
     };
 
-    fetch(`http://localhost:8080/api/gateway/devices/add?serialNumber=${serialNumber}`, {
+    fetch(`https://gateway-management.onrender.com/api/gateway/devices/add?serialNumber=${serialNumber}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
