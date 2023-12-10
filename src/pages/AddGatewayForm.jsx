@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../css/gateway-form.css'; // Import the CSS file
+import '../css/gateway-form.css';
 
 const AddGatewayForm = () => {
   const [name, setName] = useState('');
@@ -9,7 +9,7 @@ const AddGatewayForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('http://localhost:8080/api/gateway/save', {
+      const response = await fetch('https://gateway-management.onrender.com/api/gateway/save', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
