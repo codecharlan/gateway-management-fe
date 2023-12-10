@@ -3,7 +3,7 @@ import '../css/device-list.css'
 
 const DeviceList = ({ devices, serialNumber, onDeviceRemove }) => {
   const handleRemoveDevice = (deviceId) => {
-    fetch(`http://localhost:8080/api/gateway/devices/${deviceId}?serialNumber=${serialNumber}`, {
+    fetch(`https://gateway-management.onrender.com/api/gateway/devices/${deviceId}?serialNumber=${serialNumber}`, {
       method: 'DELETE',
     })
       .then((response) => {
