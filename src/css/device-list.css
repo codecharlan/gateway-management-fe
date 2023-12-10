@@ -1,0 +1,44 @@
+
+.DeviceList {
+    margin-top: 20px;
+  }
+  
+  .DeviceList ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .DeviceList li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 211px;
+  }
+  
+  .DeviceList h3,
+  .DeviceList p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .DeviceList button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .DeviceList button:hover {
+    background-color: #0056b3;
+  }
+  
